@@ -1,8 +1,8 @@
 public class MT {
     public static void main(String[] args) throws Exception {
         // DadosMT dadosMT = new DadosMT();
-        String palavraEntrada = "1010";
-        String MT = "desc_mt3.txt";
+        String palavraEntrada = "1010111";
+        String MT = "desc_mt4.txt";
 
         VerificadorPalavra verificadorPalavra = new VerificadorPalavra(palavraEntrada, MT);
 

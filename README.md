@@ -115,6 +115,11 @@ public class MT {
     - 0000
     - 11100111
 
+- `desc_mt4`
+    Aceita somente palavras onde todo "0" é reguido por "1"
+    - 11101
+    - 1010111
+
 ### TESTES
 
 #### Execução da maquina `desc_mt1.txt`(a^n^b^n^)
@@ -427,4 +432,37 @@ _Y010{q2}_
 _Y01{q3}0_
 _Y0{qrej}10_
 REJEITA
+```
+
+#### Execução da maquina `desc_mt4.txt`(palavras onde todo "0" é seguido por "1")
+
+- palavra `1010111001`
+```bash
+{q0}_1010111001_
+_{q1}1010111001_
+_1{q1}010111001_
+_10{q2}10111001_
+_101{q1}0111001_
+_1010{q2}111001_
+_10101{q1}11001_
+_101011{q1}1001_
+_1010111{q1}001_
+_10101110{q2}01_
+_101011100{qrej}1_
+REJEITA
+```
+
+- palavra `1010111`
+```bash
+{q0}_1010111_
+_{q1}1010111_
+_1{q1}010111_
+_10{q2}10111_
+_101{q1}0111_
+_1010{q2}111_
+_10101{q1}11_
+_101011{q1}1_
+_1010111{q1}_
+ACEITA
+
 ```
