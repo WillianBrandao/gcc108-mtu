@@ -10,7 +10,7 @@ Equipe:
 
 ### DESCRIÇÃO DO TRABALHO
 
-O usuário deve passar passar para o programa a descrição da MT através de um arquivo `.txt` seguindo o seguinte formato.
+O usuário deve passar para o programa a descrição da MT através de um arquivo `.txt` seguindo o seguinte formato.
 MT = (Q, ∑, Γ, δ, 𝑞₀, 𝑞<sub>aceita</sub>, 𝑞<sub>rejeita</sub>, _). Abaixo um formato do modelo de arquivo que deve ser passado no arquivo.
 
 Sendo:
